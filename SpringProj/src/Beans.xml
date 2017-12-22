@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="myTest" class="com.learnspring.test.Message">
+
+		<property name="message" value="SimpleCodeStuff--HelloWorld" />
+		<property name="seperateObj" ref="seperateObj1" />
+
+	</bean>
+	
+	<bean id="seperateObj1" class="com.learnspring.test.SeperateClass">
+
+		<property name="seperateItem" value="seperateItem value" />
+
+	</bean>
+	
+	<bean id="seperateObj" class="com.learnspring.test.SeperateClass">
+
+		<property name="seperateItem" value="seperateItem new value" />
+
+	</bean>
+
+</beans>
