@@ -5,6 +5,8 @@ public class Message {
 	private String message;
 	
 	private SeperateClass seperateObj;
+	
+	public int number;
 
 	/**
 	 * @return the message
